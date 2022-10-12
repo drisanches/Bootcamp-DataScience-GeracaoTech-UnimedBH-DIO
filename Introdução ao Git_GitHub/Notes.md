@@ -48,14 +48,14 @@ Isso significa que a tecnologia por trás do Git permite a atuação simultânea
 	- Aponta para uma mensagem (explicação sobre modificação feita);
 	- Aponta para um timestamp (registro da hora e horário).
 
-Através dessa estrutura é gerado uma linha do tempo com o registro de todos os commits realizados e esse é o motivo de ser um software bastante seguro. Por isso entende-se que o Git é um sistema distribuído seguro
+**OBS.:** Através dessa estrutura é gerado uma linha do tempo com o registro de todos os commits realizados e esse é o motivo de ser um software bastante seguro. Por isso entende-se que o Git é um sistema distribuído seguro.
 
 ## Chaves SSH e Tokens do Github:
 
 - O processo de autenticação do Git mudou em 2021;
 - **Chave SSH:** forma de estabelecer uma conexão segura e encriptada entre 2 máquinas;
-	- Composta por uma chave pública e uma chave privada
-	- Faz o reconhecimento da máquina em que está trabalhando para configurar como uma máquina segura
+	- Composta por uma chave pública e uma chave privada;
+	- Faz o reconhecimento da máquina em que está trabalhando para configurar como uma máquina segura;
 - **Comando pra gerar a chave SSH no Git Bash:** ssh-keygen -t ed25519 -C *e-mail de acesso*
 	- acessar id da chave: cat id_ed25519.pub
 	- ativar entidade que faz o controle das chaves: eval $(ssh-agent -s)
@@ -64,20 +64,20 @@ Através dessa estrutura é gerado uma linha do tempo com o registro de todos os
 
 ## Primeiros Comandos com Git Bash:
 
-1. **git init:** inicializar o repositório do git/Cria um repositório no Git
-2. **git add:** mover arquivos e iniciar o versionamento
+1. **git init:** inicializar o repositório do git/Cria um repositório no Git;
+2. **git add:** mover arquivos e iniciar o versionamento;
 	- git add * (ou git add.) (move o arquivo de untracked para staged) *Nesse formato indica que devem ser consideradas todas as modificações da pasta local*
 	- git add <nome do arquivo> (move somente este arquivo para staged)
-3. **git commit:** criar um commit
+3. **git commit:** criar um commit;
 	- git commit -m "commit inicial" (explicação de referência do commit)
 4. **Outros comandos:**
-	- *Comando ls:* exibe o repositório da pasta local
-	- *Comando ls -a:* exibe também as pastas ocultas
+	- *Comando ls:* exibe o repositório da pasta local;
+	- *Comando ls -a:* exibe também as pastas ocultas;
 	- *Comando para mover arquivos:* mv + *nome do arquivo* + ./novo local/
 
 #### Configurando o Git no primeiro uso:
 
-**Comandos:**
+1. **Comandos:**
 - git config --global user.email *"e-mail de acesso"*
 - git config --global user.name *"nome de usuário"*
 
@@ -89,11 +89,11 @@ Através dessa estrutura é gerado uma linha do tempo com o registro de todos os
 	- Modified: houve alteração no sha1
 3. **Staged:** arquivos prontos para fazer parte de um commit
 
-Após o commit, é feito um "snapshot" do código e os arquivos retornam para o modo "unmodified", ou seja, ficam registradas as modificações anteriores como estágio inicial para que o processo seja reiniciado
+Após o commit, é feito um "snapshot" do código e os arquivos retornam para o modo "unmodified", ou seja, ficam registradas as modificações anteriores como estágio inicial para que o processo seja reiniciado.
 
-Quando é feito o commit, os arquivos passam a integrar o repositório local e podem ser enviados para o repositório remoto (GitHub)
+Quando é feito o commit, os arquivos passam a integrar o repositório local e podem ser enviados para o repositório remoto (GitHub).
 
-Comando para consultar o status do arquivo: git status
+Para consultar o status do arquivo, basta aplicar o comando: **git status**.
 
 ## GitHub:
 
@@ -110,7 +110,7 @@ Comando para consultar o status do arquivo: git status
 
 **Conflito de merge:** quando o GitHub tenta mesclar duas alterações feitas feitas concomitantemente por 2 pessoas ou mais na mesma linha (uma no repositório remoto e outra no local). Nesse caso, será necessário baixar a versão mais atual do arquivo no GitHub para então fazer as alterações e enviar novamente
 
-#### Como resolver?
+**Como resolver?**
 - Comando Pull: git pull origin master
 - Erro merge conflict in <nome do arquivo>: deve ir até o arquivo corrigir o erro
 - Após a correção, seguir com os comandos:

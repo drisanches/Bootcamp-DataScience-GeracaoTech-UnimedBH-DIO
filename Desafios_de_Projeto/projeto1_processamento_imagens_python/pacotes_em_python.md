@@ -174,7 +174,9 @@ Para criar uma conta, acesse abaixo:
 ## Links Úteis:
 
 [Documentação do setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html)
+
 [Testes automatizados](https://docs.pytest.org/en/latest/goodpractices.html)
+
 [Uso do Tox](https://tox.readthedocs.io/en/latest/)
-[GitHub](https://github.com/tiemi/
-)
+
+[GitHub](https://github.com/tiemi/)

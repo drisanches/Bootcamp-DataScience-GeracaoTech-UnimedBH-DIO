@@ -1,4 +1,4 @@
-# Processamento de Imagem com Pyhton
+# **Processamento de Imagem com Pyhton**
 
 ## Descrição:
 O pacote *image-Processing* foi criado pela [Karina](https://www.linkedin.com/in/karina-kato-4b2a56182/
@@ -11,7 +11,7 @@ O pacote *image-Processing* foi criado pela [Karina](https://www.linkedin.com/in
 - Structural similarity
 - Resize image
 
-## Ultils:
+## Utils:
 - Read image
 - Save image
 - Plot image
